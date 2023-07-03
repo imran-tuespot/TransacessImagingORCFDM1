@@ -1,0 +1,76 @@
+import java.io.File;
+public class Converter
+{
+        public  synchronized String convertFile(String inputFileName, String outputFileName, boolean forceOverwrite, Integer port) throws SecurityException, NoSuchFieldException, Exception
+{
+
+                int timeoutInSec = 180;
+                System.out.println("Converting File " + inputFileName + " -> " + outputFileName);
+                String envp[] = new String[1];
+                envp[0]="LUIB=ABCD";
+                        Process proc = Runtime.getRuntime().exec("/usr/lib/libreoffice/program/soffice --headless --convert-to pdf "
+                        +inputFileName +" "+outputFileName, envp, new File("/backup"));
+                int rc = -1;
+                try
+                {
+                        //rc = proc.waitFor();
+
+                        long now = System.currentTimeMillis();
+                        long timeoutInMillis = 1000L * timeoutInSec;
+                        long finish = now + timeoutInMillis;
+
+                        while(System.currentTimeMillis() < finish) //Within timeout period
+                        {
+                                if(isAlive(proc))
+                                {
+                                        Thread.sleep(10);
+                                }
+                                else
+                                {
+                                        System.out.println("Done with Conversion before timeout in "+(System.currentTimeMillis()-now)/1000 +"secs");
+                                        rc = proc.exitValue();
+                                        break;
+                                }
+                        }
+
+
+                System.out.println("Rc = "+rc);
+                /*if(rc == -1)
+                {
+                        System.out.println("Destroying process after timeout...");
+						proc.destroy();
+                }*/
+        } catch (Exception oex)
+        {
+                 System.out.println("error:" + oex);
+                 return "false";
+        }
+        finally
+        {
+                proc.destroy();
+        }
+
+        if(rc == 0)
+        {
+                return "true";
+        }
+        else
+        {
+                System.out.println("Conversion failed...");
+                return "false";
+        }
+    }
+private static boolean isAlive(Process p)
+{
+        try{
+                p.exitValue();
+                return false;
+
+        }catch(IllegalThreadStateException e)
+        {
+                return true;
+        }
+}
+
+}
+    

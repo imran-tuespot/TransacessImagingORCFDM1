@@ -1,0 +1,12 @@
+${firstName} ${lastName},
+
+Your selected files are ready to download.
+The file will be available for 24 hours.
+please click on the link below or copy and paste
+it into a browser.
+
+${URL}/DocDownloadBuiltFile?userid=${userid}&session=${session}
+
+The file that is downloaded is a ZIP file and can unarchived
+and copied to a flash drive or written to a CD/DVD.
+

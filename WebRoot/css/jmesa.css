@@ -1,0 +1,252 @@
+.jmesa {
+    margin: 0;
+    padding: 0;
+}
+
+.jmesa caption {
+    caption-side: top;
+    color: #444444;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.jmesa .table {
+   /* border: 1px solid silver;*/
+    padding: 2px;
+}
+
+.toolbar table {
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+.jmesa .toolbar td {
+    padding: 0px 1px 0px 1px;
+}
+
+.jmesa .toolbar select {
+    font-size: 11px;
+    border: solid 1px #c4c3c2;
+}
+
+.jmesa .toolbar img {
+    border:0px;
+}
+
+.jmesa .filter td {
+	padding: 2px 2px 2px 2px;
+}
+
+.jmesa .tbody input {
+    padding: 0;
+    margin: 0;
+}
+
+.jmesa .filter .dynFilter {
+    position: relative;
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #c0c0c0;
+    background-color: #FFF;
+    height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+   /* margin-bottom:15px*/
+}
+
+.jmesa .filter #dynFilterDiv {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding: 0;
+    margin: 0;
+    height: 17px;
+    border: 1px solid #c0c0c0;
+    background-color: #e1ebf4;
+}
+
+.jmesa .filter #dynFilterInput {
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    background-color: #e1ebf4;
+}
+
+.jmesa .filter #dynFilterDroplistDiv {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding: 0;
+    margin: 0;
+    height: 17px;
+    background-color: #e1ebf4;
+    z-index: 2;
+}
+
+.jmesa .filter #dynFilterDroplist {
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #c0c0c0;
+    background-color: #e1ebf4;
+}
+
+.jmesa .header td {
+	white-space: nowrap;
+    background-color: #7098CC ;
+    color: white;
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+	padding: 10px 10px;
+	border: 1px solid #FFF;
+    text-align: left;
+}
+
+.jmesa .odd a,.jmesa .even a {
+    color: #0B3861;
+}
+
+.jmesa .odd td,.jmesa .even td {
+    font-family: roboto;
+	font-size: 11px;
+    padding: 2px 3px 2px 3px;
+}
+
+.jmesa .odd td {
+   /* border: 1px solid #ffffff;*/
+    text-align: left;
+    padding-bottom: 10px;
+   /* border-bottom: 1px solid rgb(227, 227, 227);*/
+   border-bottom: 1px solid #BFBFBF;
+    padding-top: 10px;
+
+}
+
+.jmesa .even td {
+   /* border: 1px solid #e3e3e3;*/
+	text-align: left;
+	padding-bottom: 10px;
+   /* border-bottom: 1px solid rgb(227, 227, 227);*/
+   	border-bottom: 1px solid #BFBFBF;
+    padding-top: 10px;
+
+}
+
+.jmesa .odd {
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.jmesa .even {
+   /* background-color: #e3e3e3;*/
+    text-align: left;
+}
+.jmesa .highlight td:first-child
+{
+	border-left: 3px solid #288BDF;
+}
+.jmesa .highlight td:last-child
+{
+	border-right: 3px solid #288BDF;
+}
+.jmesa .highlight td {
+    font-family: roboto;
+    font-size: 11px;
+	padding-bottom: 10px;
+    padding-top: 10px;
+	color: #000;
+    text-align: left;
+    background: rgba(64, 0, 144, 0.06) none repeat scroll 0% 0%;
+    padding-left:3px;
+    background: transparent linear-gradient(to bottom, #FFF 0px, #EEE 100%) repeat scroll 0% 0%;
+	border-bottom: 1px solid #B9B9B9;
+	border-top: 1px solid #B9B9B9;	
+	cursor: pointer;
+}
+
+.jmesa .highlight a {
+    color: black;
+}
+
+.jmesa .statusBar td {
+    font-family: Geneva, Arial, Helvetica;
+	font-size: 11px;
+    border-top: 1px solid silver;
+    background-color: #efebe7;
+    padding: 2px;
+    background: transparent linear-gradient(to bottom, #FFF 0px, #EEE 100%) repeat scroll 0% 0%;
+	border-bottom: 1px solid #B9B9B9;
+	line-height: 39px;
+}
+
+.jmesa .dropShadow {
+    padding: 10px 14px 14px 10px;
+}
+
+.jmesa .wsColumn {
+    position: relative;
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #c0c0c0;
+    height: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.jmesa .wsColumnError {
+    position: relative;
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 11px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    color: #ec4646;
+    border-bottom: 1px dashed #ec4646;
+    height: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.jmesa .wsColumnChange {
+    position: relative;
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 11px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    color: #005e8f;
+    border-bottom: 1px dashed #005e8f;
+    height: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.jmesa #wsColumnDiv {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    padding: 0;
+    margin: 0;
+    height: 17px;
+    border: 1px solid #c0c0c0;
+    background-color: #ededed;
+}
+
+.jmesa #wsColumnInput {
+    font-family: Geneva, Arial, Helvetica;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    background-color: #ededed;
+}

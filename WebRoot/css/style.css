@@ -1,0 +1,197 @@
+body {margin:0; padding:0; font-family: roboto !important; olor:#000}
+
+.f-family { /* font-family: roboto !important; */ }
+
+p {margin:5px 0}
+a {text-decoration:none}
+a:hover {text-decoration:none}
+form {margin:0; padding:0}
+
+.MainTable {width:850px; border-collapse:collapse}
+.Content {padding:0 20px; vertical-align:top}
+.Heading1 {background:#a1d0ff; padding:2px 5px; font-size:15px; color:#FFF; font-weight:bold}
+.PageHd1 {font-size:16px; color:#363593; font-weight:bold; border-bottom:2px solid #548dd4; padding-bottom:2px}
+.PageHd2 {font-size:13px; color:#363593; font-weight:bold; padding-bottom:5px}
+
+hr.Line1 {border:0px none; border-bottom:1px solid #c0c0c0; height:1px}
+
+.TblData1 {border-collapse:collapse; font-size:12px}
+.TblData1 td {padding:3px 6px}
+.TblData1 tr.Fst {background:#f1f1f1; font-weight:bold}
+
+.TagDiv1 {background:#c3c3c3 url(../images/TagBg1.gif) top right no-repeat; color:#FFF; padding:5px; width:176px; margin:0 auto}
+.Tag1 {font-size:20px; font-weight:bold}
+
+.Footer {font-size:11px; color:#969696; text-align:center}
+
+input, select, textarea {border:1px solid #d7d7d7; font-family:Arial; font-size:13px; color:#000; padding:1px}
+input.chkbx {border:0 none; padding:0}
+input.Btn1 {border:0 none; outline:none; background:url(../images/btn2.gif) left top no-repeat; font-family:Arial; font-size:14px; color:#000; font-weight:bold; text-transform:uppercase; text-align:center; height:30px; width:120px; padding:0; cursor:pointer; line-height:30px}
+input.Btn2 {border:0 none; outline:none; background:url(../images/btn1.gif) left top no-repeat; font-family:Arial; font-size:14px; color:#FFF; font-weight:bold; text-transform:uppercase; text-align:center; height:30px; width:120px; padding:0; cursor:pointer; line-height:30px}
+
+input.Btn3 {border:0 none; outline:none; background:url(../images/btn4.gif) left top no-repeat; font-family:Arial; font-size:14px; color:#000; font-weight:bold; text-transform:uppercase; text-align:center; height:30px; width:180px; padding:0; cursor:pointer; line-height:30px}
+input.Btn4 {border:0 none; outline:none; background:url(../images/btn3.gif) left top no-repeat; font-family:Arial; font-size:14px; color:#FFF; font-weight:bold; text-transform:uppercase; text-align:center; height:30px; width:180px; padding:0; cursor:pointer; line-height:30px}
+
+
+/* Drop Down Menu */
+.preload2 {background:url(../images/button4.gif)}
+.menu2 {padding:0 0 0 18px; margin:0; list-style:none; height:40px; background:#fff url(../images/button1a.gif) repeat-x; position:relative; font-family:arial, verdana, sans-serif}
+.menu2 li.top {display:block; float:left; position:relative}
+.menu2 li a.top_link {display:block; float:left; height:40px; line-height:33px; color:#fff; text-decoration:none; font-size:12px; font-weight:bold; padding:0 0 0 8px; cursor:pointer}
+.menu2 li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:40px}
+.menu2 li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:40px; background:url(../images/down.gif) no-repeat right top}
+.menu2 li a.top_link:hover {color:#fff; background:url(../images/button4.gif) no-repeat}
+.menu2 li a.top_link:hover span {background:url(../images/button4.gif) no-repeat right top}
+.menu2 li a.top_link:hover span.down {background:url(../images/button4a.gif) no-repeat right top}
+.menu2 li:hover>a.top_link {color:#fff; background:url(../images/button4.gif) no-repeat}
+.menu2 li:hover>a.top_link span {background:url(../images/button4.gif) no-repeat right top}
+.menu2 li:hover>a.top_link span.down {background:url(../images/button4a.gif) no-repeat right top}
+.menu2 table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0}
+.menu2 a:hover {visibility:visible}
+.menu2 li:hover {position:relative; z-index:200}
+.menu2 ul,.menu2 :hover ul ul,.menu2 :hover ul :hover ul ul,.menu2 :hover ul :hover ul :hover ul ul,.menu2 :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none}
+.menu2 :hover ul.sub {left:2px; top:40px; background:#fff; padding:3px 0; border:1px groove #D7D5D5; white-space:nowrap; width:160px; height:auto}
+.menu2 :hover ul.sub li {display:block; height:20px; position:relative; float:left; width:90px}
+.menu2 :hover ul.sub li a {display:block; font-size:13px; height:20px; width:154px; line-height:20px; text-indent:5px; color:#000; text-decoration:none; border:3px solid #fff; border-width:0 0 0 3px}
+.menu2 :hover ul.sub li a.fly {background:#fff url(../images/arrow.gif) 145px 7px no-repeat}
+.menu2 :hover ul.sub li a:hover {background:#D7D5D5; color:#000}
+.menu2 :hover ul.sub li a.fly:hover {background:#D7D5D5 url(../images/arrow_over.gif) 145px 7px no-repeat; color:#fff}
+.menu2 :hover ul li:hover>a.fly {background:#D7D5D5 url(../images/arrow_over.gif) 145px 7px no-repeat; color:#fff}
+.menu2 :hover ul :hover ul,.menu2 :hover ul :hover ul :hover ul,.menu2 :hover ul :hover ul :hover ul :hover ul,.menu2 :hover ul :hover ul :hover ul :hover ul :hover ul {left:155px; top:-4px; background:#fff; padding:3px 0; border:1px solid #D7D5D5; white-space:nowrap; width:160px; z-index:200; height:auto}
+/* Drop Down Menu */
+
+.errors {color: red;}
+
+.headerWelcome{
+	font-family:cursive;
+	display: block;
+	float: left;
+	height: 40px;
+	line-height: 33px;
+	color: #bbb;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 0 0 12px;
+}
+
+
+.successMessage{
+	height: 40px;
+	line-height: 33px;
+	color: #81A270;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+.Star {color:#FF0000}
+.Alert {color:#FF0000}
+
+
+body { 
+	padding: 0 20px;
+}
+:focus { outline: none !important; }
+#transMenu .navbar-default {
+	background-color: transparent;
+    border-color: transparent;
+}
+.borderAll {
+	border: 1px solid #a5a1a1;
+	padding: 12px 0;
+	margin-bottom: 25px;
+}
+.list-none { list-style: none; }
+.color-blue { color: #5689d2; }
+
+.margin5 { margin: 5px 0 !important; }
+.pleft0 { padding-left: 0 !important; }
+.mtop10 { margin-top: 10px; }
+.selectArea {
+	height: 40px;
+	border: 1px solid #ccc;	
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 6px #ccc;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    -moz-box-shadow: 0 0 6px #ccc;
+        
+}
+#selectFHA{
+width: 150px !important;
+}
+.width100per { width: 100%; }
+.width160 { width: 160px; }
+#searchResults { min-height: 200px; }
+.posiRelavtive { position: relative; }
+.searchIcon { 
+	position: absolute;
+    left: 22px;
+    top: 10px;
+    color: #ccc;
+}
+.inputStyle { 
+	padding-left: 15px;
+    width: 100%;
+    border: 1px solid #ccc !important;    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 6px #ccc;
+    -webkit-box-shadow: 0 0 6px #ccc;
+    -moz-box-shadow: 0 0 6px #ccc;
+}
+.inputStyle1 { width: 100%; }
+.lablestyle { 
+	font-size: 12px; 
+	font-family: roboto; 
+	padding: 10px -1px 0;
+    text-align: left;
+    color: #0B3861;
+}
+#loanTypePropertyList a { 
+	font-family: roboto;
+	    line-height: 18px; 
+}
+select[multiple], select[size] {
+    height: auto;
+    width: 86%;
+	overflow: auto !important;
+}
+.hrStyle1 { border-bottom: 1px solid #a5a1a1 !important; }
+#searchResTable th {
+		background: #5689d2;
+		color: #fff;
+		font-weight: normal;
+	}
+.btnStyle  {
+	font-size: 13px;
+	padding: 6px 12px;;
+}
+.propertyDetails { padding: 10px 0; }
+.propertyDetails td { padding: 5px 0 !important; } 
+body .ui-widget.ui-widget-content {
+	position: fixed !important; width: 72% !important; top: 20px !important; left: 20px !important;
+  right: 20px !important; bottom: 20px !important; height: 90%  !important; margin: auto  !important;
+  overflow: auto !important; 
+}
+body #dialog-modal { height: auto !important; }
+body ul.jqueryFileTree a { border-bottom: 0 !important; }
+.leftscrollbar {
+	padding: 10px; 
+	min-height: 295px; 
+	overflow: auto; 
+	border: 1px solid #ccc;
+}
+.propertysearchForm .lablestyle{margin-top:10px; !important}
+#loanType.selectArea{
+	list-style:none;
+	text-align:left;
+	/* height:80px !important; */
+	overflow:auto !important;
+	
+}
+#loanType.selectArea li{padding:3px;}

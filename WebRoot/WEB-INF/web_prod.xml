@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>Transaccess Imaging</display-name>
+    <servlet>
+        <display-name>GetSupervisorGridLinks</display-name>
+        <servlet-name>GetSupervisorGridLinks</servlet-name>
+        <servlet-class>GetSupervisorGridLinks</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetFiles</display-name>
+        <servlet-name>GetFiles</servlet-name>
+        <servlet-class>GetFiles</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>EditDocument</display-name>
+        <servlet-name>EditDocument</servlet-name>
+        <servlet-class>EditDocument</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>EditDocProfile</display-name>
+        <servlet-name>EditDocProfile</servlet-name>
+        <servlet-class>EditDocProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>DocMgmtSearchGrid</display-name>
+        <servlet-name>DocMgmtSearchGrid</servlet-name>
+        <servlet-class>DocMgmtSearchGrid</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>FileUpload</display-name>
+        <servlet-name>FileUpload</servlet-name>
+        <servlet-class>FileUpload</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>AuditTrail</display-name>
+        <servlet-name>AuditTrail</servlet-name>
+        <servlet-class>AuditTrail</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>UserAuditTrail</display-name>
+        <servlet-name>UserAuditTrail</servlet-name>
+        <servlet-class>UserAuditTrail</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>UserAudit</display-name>
+        <servlet-name>UserAudit</servlet-name>
+        <servlet-class>UserAudit</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>UserAuditTrailPdf</display-name>
+        <servlet-name>UserAuditTrailPdf</servlet-name>
+        <servlet-class>UserAuditTrailPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetUsernameValidation</display-name>
+        <servlet-name>GetUsernameValidation</servlet-name>
+        <servlet-class>GetUsernameValidation</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetSupervisorGrid</display-name>
+        <servlet-name>GetSupervisorGrid</servlet-name>
+        <servlet-class>GetSupervisorGrid</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetAdminPasswordReset</display-name>
+        <servlet-name>GetAdminPasswordReset</servlet-name>
+        <servlet-class>GetAdminPasswordReset</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetUserStatusChange</display-name>
+        <servlet-name>GetUserStatusChange</servlet-name>
+        <servlet-class>GetUserStatusChange</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>worksheet</servlet-name>
+        <servlet-class>org.jmesa.worksheet.servlet.WorksheetServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>Getlogin</display-name>
+        <servlet-name>Getlogin</servlet-name>
+        <servlet-class>Getlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetDropDown</display-name>
+        <servlet-name>GetDropDown</servlet-name>
+        <servlet-class>GetDropDown</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>GetIndexDropDown</display-name>
+        <servlet-name>GetIndexDropDown</servlet-name>
+        <servlet-class>GetIndexDropDown</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>DisplayPdf</display-name>
+        <servlet-name>DisplayPdf</servlet-name>
+        <servlet-class>DisplayPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>DisplayPdfs</display-name>
+        <servlet-name>DisplayPdfs</servlet-name>
+        <servlet-class>DisplayPdfs</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>MyProfile</display-name>
+        <servlet-name>MyProfile</servlet-name>
+        <servlet-class>MyProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>SupervisorEditUserProfile</display-name>
+        <servlet-name>SupervisorEditUserProfile</servlet-name>
+        <servlet-class>SupervisorEditUserProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>ProcessRegistration</display-name>
+        <servlet-name>ProcessRegistration</servlet-name>
+        <servlet-class>ProcessRegistration</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>DocDownloadFile</display-name>
+        <servlet-name>DocDownloadFile</servlet-name>
+        <servlet-class>DocDownloadFile</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>DocDownloadBuiltFile</display-name>
+        <servlet-name>DocDownloadBuiltFile</servlet-name>
+        <servlet-class>DocDownloadBuiltFile</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>NewDocType</display-name>
+        <servlet-name>NewDocType</servlet-name>
+        <servlet-class>NewDocType</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>log4j-init</servlet-name>
+        <servlet-class>Log4jInit</servlet-class>
+        <init-param>
+            <param-name>log4j-init-file</param-name>
+            <param-value>WEB-INF/classes/log4j.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>VerSession</servlet-name>
+        <servlet-class>VerSession</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>AddDocument</servlet-name>
+        <servlet-class>AddDocument</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>GetVersions</servlet-name>
+        <servlet-class>GetVersions</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This will allow the user to create a list of documents to download</description>
+        <display-name>DocDownloadSearchGrid</display-name>
+        <servlet-name>DocDownloadSearchGrid</servlet-name>
+        <servlet-class>DocDownloadSearchGrid</servlet-class>
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddRequiredDocument</servlet-name>
+    <servlet-class>AddRequiredDocument</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SampleServlet</servlet-name>
+    <servlet-class>SampleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendmailWithCC_BCC</servlet-name>
+    <servlet-class>SendmailWithCC_BCC</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CompanyProfile</servlet-name>
+    <servlet-class>CompanyProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddIndexType</servlet-name>
+    <servlet-class>AddIndexType</servlet-class>
+  </servlet>
+
+ 
+
+    <servlet-mapping>
+        <servlet-name>worksheet</servlet-name>
+        <url-pattern>*.wrk</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetUserStatusChange</servlet-name>
+        <url-pattern>/GetUserStatusChange</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetUsernameValidation</servlet-name>
+        <url-pattern>/GetUsernameValidation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetFiles</servlet-name>
+        <url-pattern>/GetFiles</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDocument</servlet-name>
+        <url-pattern>/EditDocument</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDocProfile</servlet-name>
+        <url-pattern>/EditDocProfile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DocMgmtSearchGrid</servlet-name>
+        <url-pattern>/DocMgmtSearchGrid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUpload</servlet-name>
+        <url-pattern>/FileUpload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AuditTrail</servlet-name>
+        <url-pattern>/AuditTrail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAuditTrail</servlet-name>
+        <url-pattern>/UserAuditTrail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAuditTrailPdf</servlet-name>
+        <url-pattern>/UserAuditTrailPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserAudit</servlet-name>
+        <url-pattern>/UserAudit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSupervisorGrid</servlet-name>
+        <url-pattern>/GetSupervisorGrid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSupervisorGridLinks</servlet-name>
+        <url-pattern>/GetSupervisorGridLinks</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAdminPasswordReset</servlet-name>
+        <url-pattern>/GetAdminPasswordReset</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Getlogin</servlet-name>
+        <url-pattern>/Getlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetDropDown</servlet-name>
+        <url-pattern>/GetDropDown</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetIndexDropDown</servlet-name>
+        <url-pattern>/GetIndexDropDown</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayPdf</servlet-name>
+        <url-pattern>/DisplayPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayPdfs</servlet-name>
+        <url-pattern>/DisplayPdfs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerSession</servlet-name>
+        <url-pattern>/VerSession</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddDocument</servlet-name>
+        <url-pattern>/AddDocument</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVersions</servlet-name>
+        <url-pattern>/GetVersions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MyProfile</servlet-name>
+        <url-pattern>/MyProfile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SupervisorEditUserProfile</servlet-name>
+        <url-pattern>/SupervisorEditUserProfile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessRegistration</servlet-name>
+        <url-pattern>/ProcessRegistration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DocDownloadSearchGrid</servlet-name>
+        <url-pattern>/DocDownloadSearchGrid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DocDownloadFile</servlet-name>
+        <url-pattern>/DocDownloadFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DocDownloadBuiltFile</servlet-name>
+        <url-pattern>/DocDownloadBuiltFile</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRequiredDocument</servlet-name>
+    <url-pattern>/AddRequiredDocument</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>NewDocType</servlet-name>
+      <url-pattern>/NewDocType</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SampleServlet</servlet-name>
+    <url-pattern>/servlet/SampleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendmailWithCC_BCC</servlet-name>
+    <url-pattern>/SendmailWithCC_BCC</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompanyProfile</servlet-name>
+    <url-pattern>/CompanyProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddIndexType</servlet-name>
+    <url-pattern>/AddIndexType</url-pattern>
+  </servlet-mapping>
+  
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    <env-entry>
+        <description>DB Connection</description>
+        <env-entry-name>connection</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+  <env-entry-value>jdbc:oracle:thin:@10.1.3.180:1521:TAPROD2</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>URL</description>
+        <env-entry-name>URL</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>http://www.transaccessimaging.com/</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Web Folder for uploading documents : web for Prod and webtest for dev/test</description>
+        <env-entry-name>webfolder</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>webtest</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>DB USER</description>
+        <env-entry-name>dbusername</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>imageuser</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>DB USPW</description>
+        <env-entry-name>dbpassword</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>p3n13l</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>SMTP Server</description>
+        <env-entry-name>smtp</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>10.1.0.5</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>DB Source</description>
+        <env-entry-name>dbsource</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>PSPATCH</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Sending Email</description>
+        <env-entry-name>semail</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>noreply@fhaoutreach.com</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Document Converter URL</description>
+        <env-entry-name>converterUrl</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>10.1.3.78:8300</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Document Converter Directory</description>
+        <env-entry-name>converterCommonUrl</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>/backup</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Document Temp Directory</description>
+        <env-entry-name>converterTempDirectory</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>/tmp</env-entry-value>
+    </env-entry>
+    <env-entry>
+        <description>Final Dowload Directory</description>
+        <env-entry-name>finalDownloadDir</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>/downloads</env-entry-value>
+    </env-entry>
+	 <env-entry>
+        <description>File Upload Size</description>
+        <env-entry-name>fileUploadSize</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>1433600</env-entry-value>
+    </env-entry>
+
+
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+    </filter>
+
+
+    
+
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>/*</url-pattern>
+        <servlet-name>Getlogin</servlet-name>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+
+    </filter-mapping>
+
+
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>/logout.jsp*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+	<env-entry>
+        <description>Apache Solr URL</description>
+        <env-entry-name>solrUrl</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <!-- env-entry-value>http://localhost:8080/ApacheSolr</env-entry-value-->
+        <env-entry-value>http://10.1.3.74/ApacheSolr</env-entry-value>
+    </env-entry> 
+	
+ 
+ 
+</web-app>

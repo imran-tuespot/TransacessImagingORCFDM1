@@ -1,0 +1,96 @@
+package com.peniel.utilities;
+
+import java.io.File;
+
+import org.artofsolving.jodconverter.OfficeDocumentConverter;
+import org.artofsolving.jodconverter.office.ExternalOfficeManagerConfiguration;
+import org.artofsolving.jodconverter.office.OfficeConnectionProtocol;
+import org.artofsolving.jodconverter.office.OfficeException;
+import org.artofsolving.jodconverter.office.OfficeManager;
+
+//import com.artofsolving.jodconverter.openoffice.connection.OpenOfficeConnection;
+
+
+public class Converter{
+ OfficeManager officeManager;
+
+		 
+	 public  synchronized String convertFile(String inputFileName, String outputFileName, boolean forceOverwrite, Integer port) throws SecurityException, NoSuchFieldException, Exception {
+	    
+	       System.out.println("Converting File " + inputFileName + " -> " + outputFileName);
+	        java.io.File inputFile = new java.io.File(inputFileName);
+	        java.io.File outputFile = new java.io.File(outputFileName);
+	       
+	        if (!inputFile.exists()) {
+	            System.out.println("Source file "+ inputFile + " does not exist");
+	            return null;
+	        }
+
+	        if (outputFile.exists()) {
+	            if (forceOverwrite) {
+	                if (!outputFile.delete()) {
+	                    System.out.println("Cannot delete destination file");
+	                    return null;
+	                }
+	            } else {
+	                System.out.println("Destination file "+ inputFile + " does not exist");
+	                return null;
+	            }
+	        }
+	                      
+	        System.out.println("Converting Input file -----> "+inputFile.getPath());      
+	       
+	        return convertFile(inputFile, outputFile, port);
+	    }
+	    
+	   
+
+	    public  synchronized String convertFile(java.io.File inputFile, java.io.File outputFile, Integer port) {
+	    	
+	            
+	    	//OpenOfficeConnection connection = null;	    	 
+	    	OfficeDocumentConverter converter = null;
+	       
+	     	       	        	
+	        	try { 
+	               OfficeManager officeManager = null;	             
+	              
+	                ExternalOfficeManagerConfiguration externalProcessOfficeManager = new 
+	                ExternalOfficeManagerConfiguration(); 
+	                externalProcessOfficeManager.setConnectOnStart(true); 
+	                externalProcessOfficeManager.setPortNumber(8301); 
+	                
+	               
+	                externalProcessOfficeManager.setConnectionProtocol(OfficeConnectionProtocol.SOCKET);
+	                officeManager = externalProcessOfficeManager.buildOfficeManager(); 
+	                
+	                officeManager.start();
+	        	
+		            	            
+		            long startTime = System.currentTimeMillis();  
+		            
+		            converter = new OfficeDocumentConverter(officeManager);           
+		            long conversionTime = System.currentTimeMillis() - startTime;      
+		            
+		            converter.convert(inputFile, outputFile);
+		           
+		            officeManager.stop(); 
+
+
+		    } catch (OfficeException oex) { 
+		         System.out.println("error:" + oex); 
+		         return null;
+		    } 
+
+	        catch (Exception e) 
+	        {
+	            System.out.println("Error in trying to convert File Using Server " + port);
+	            return null;
+	            
+	        } 
+
+	        return outputFile.getPath();
+	    }
+	       
+
+}

@@ -1,0 +1,50 @@
+body { 
+	padding: 0 20px;
+}
+:focus { outline: none !important; }
+#transMenu .navbar-default {
+	background-color: transparent;
+    border-color: transparent;
+}
+.borderAll {
+	border: 1px solid #a5a1a1;
+	padding: 8px;
+	margin-bottom: 25px;
+}
+.list-none { list-style: none; }
+.color-blue { color: #5689d2; }
+
+.margin5 { margin: 5px 0 !important; }
+.pleft0 { padding-left: 0 !important; }
+.mtop10 { margin-top: 10px; }
+.selectArea {
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.width160 { width: 160px; }
+#searchResults { min-height: 200px; }
+.posiRelavtive { position: relative; }
+.searchIcon { 
+	position: absolute;
+    left: 22px;
+    top: 10px;
+    color: #ccc;
+}
+.inputStyle { 
+	padding-left: 26px; 
+	width: 80%;
+}
+.inputStyle1 { width: 60%; }
+.lablestyle { font-size: 12px; }
+select[multiple], select[size] {
+    height: auto;
+    width: 86%;
+	overflow: auto !important;
+}
+.hrStyle1 { border: 1px solid #a5a1a1; }
+#searchResTable th {
+		background: #5689d2;
+		color: #fff;
+		font-weight: normal;
+	}

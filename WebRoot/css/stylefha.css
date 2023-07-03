@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+
+    border-bottom: 2px solid orange;
+    padding: 0px;
+}
+.text-center h3{
+    padding-right: 30px;
+    color: rgb(59, 174, 192);
+    margin: 0px;
+}
+.text-center p{
+    padding-right: 30px;
+    color:  rgb(59, 174, 192);
+    font-size: 20px;
+    margin: 0px;}
+
+.collapse {
+
+    justify-content: center;
+}
+
+.collapse ul li a{
+    color: rgb(44, 55, 79);
+    margin: 0px;
+    padding: 0px 10px;
+
+}
+.collapse ul li a:hover{
+    color: rgb(44, 55, 79);
+    border-bottom: 2px solid ;
+}
+
+
+.text_user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_user p{
+    padding: 0px;
+    
+}
+
+.btn-warning{
+      color: #fff;
+}
+/* ===================================form-section========================== */
+
+
+.body_container{
+ padding: 30px;
+    
+}
+.top_container{
+    box-shadow:  -1px 0px 3px 3px #6b3184;
+
+} 
+
+.view_ticket{
+    /* border-bottom: 2px solid ; */
+   padding: 10px;
+}
+.head{
+    border-bottom: 2px solid #6b3184;
+    margin: 0px 5px;
+}
+
+.para_border {
+    
+ 
+ 
+}
+.para_border p{
+    padding: 5px;
+}
+label{
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0px;  
+    
+}
+.input{
+    width: 10%;
+    padding: 5px 20px;
+    border: 2px solid #e2e2e2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 5px;
+}
+.inputt{
+    width: 100%;
+    padding: 5px 20px;
+    border: 2px solid #e2e2e2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 5px;
+}
+
+.text_area{
+    /* width: 100%; */
+    padding: 5px ;
+    border: 2px solid #e2e2e2;
+    border-top-right-radius: 82px 20px;
+    border-top-left-radius: 82px 20px;
+    border-bottom-right-radius: 82px 20px;
+    border-bottom-left-radius: 82px 20px;
+    transition: 0.5s;
+    outline: none;
+   
+}
+.small_text_area{    /* width: 100%; */
+    padding: 5px;
+    border: 2px solid #e2e2e2;
+    border-top-right-radius: 60px 12px;
+    border-top-left-radius: 60px 12px;
+    border-bottom-right-radius: 60px 12px;
+    border-bottom-left-radius: 60px 12px;
+    transition: 0.5s;
+    outline: none;
+}
+

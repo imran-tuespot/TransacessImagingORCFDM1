@@ -1,0 +1,638 @@
+body
+{
+	font-family: verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: .8em;
+	font-weight: normal;
+	color: black;
+}
+
+td, th
+{
+	font-weight: normal;
+	font-size: 8pt;
+}
+
+p
+{
+	margin: 0;
+}
+
+textarea, input, select
+{
+	font-family: verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+textarea[readonly=readonly]
+{
+    background-color:#C0C0C0;
+}
+
+.fieldlabel, tr.fieldlabel td
+{
+	font-weight:bold;
+}
+
+
+/* Used on popup settings screens to make the columns line up correctly*/
+.settings .fieldlabel 
+{
+    width: 350px;
+}
+
+
+
+h1
+{
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #5273b5;
+	margin: 4px 0px 8px 0px;
+	padding: 0px;
+}
+
+h2
+{
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 4px 0px;
+	padding: 0px;
+	color: #5273b5;
+}
+
+h3
+{
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 0;
+	padding: 0px;
+}
+
+a
+{
+	color: #0097BD;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link
+{
+	color: #0097BD;
+}
+
+a:hover
+{
+	color: #0097BD;
+	text-decoration: underline;
+}
+
+.rollup
+{
+	padding: 2px 2px 2px 2px;
+	margin: 3px 3px 3px 3px;
+	border: none;
+	vertical-align:bottom;
+	background-color: #dedede;
+}
+
+.divtorollup
+{
+	padding: 0;
+	margin: 0;
+}
+
+/* General layout controls */
+.floatleftblock, .titleblock
+{
+    float: left;  
+    margin-bottom: 6px;
+}
+.floatrightblock, .titleblockobject
+{
+    float: right;
+    margin-bottom: 6px;
+}
+/* grid styles are used for tables on most main screens */
+
+table.grid, table.hovergrid
+{
+	border-collapse: collapse;
+	border: white solid 2px; /* Note if this figure is altered update the "table.grid td, table.grid th,table.hovergrid th,table.hovergrid td" figure to match it*/
+	width: 100%;
+	clear: both; /* Grids should not have things floated around them*/
+}
+
+table.grid tr, table.hovergrid tr
+{
+	background-color: #dedede;
+}
+
+table.hovergrid tr:hover, table.hovergrid tr:hover table.iconandfile tr, table.hovergrid tr:hover table.sequence tr
+{
+	background-color: #c0c0c0;
+	color: black;
+}
+
+table.hovergrid th tr:hover
+{
+	background-color: Transparent;
+	color: inherit;
+}
+
+table.hovergrid th tr:hover
+{
+	background-color: Transparent;
+	color: inherit;
+}
+
+
+table.hovergrid  tr.fieldlabel:hover
+{
+	background-color: Transparent;
+	color: inherit;
+}
+
+table.grid th,table.hovergrid th
+{
+	font-weight: bold;
+}
+
+table.grid td, table.grid th,table.hovergrid th,table.hovergrid td
+{
+	padding: 2px 4px;
+	border: white solid 2px; /* Note if this figure is altered update the "table.grid, table.hovergrid" figure to match it*/
+	vertical-align:top;
+}
+
+.gridBorder, .smallgridBorder
+{
+	width: 684px;
+	background-color: #dedede;
+	padding:  8px; /* Note if this figure is altered update the ul.tab margin-bottom figure to match it*/
+	margin-bottom: 10px;
+	clear: both; /* The grid always stand alone so clear any floats*/
+}
+
+.messageArea
+{
+    width: 684px;
+	background-color: White;
+	padding:  8px; /* Note if this figure is altered update the ul.tab margin-bottom figure to match it*/
+	margin-bottom: 10px;
+	clear: both; /* The grid always stand alone so clear any floats*/
+}
+
+.smallgridBorder
+{
+	width: 500px;
+}
+
+
+.gridpadding
+{
+	padding: 8px;
+}
+
+.gridbackground
+{
+	background-color: #dedede;
+}
+
+/* used for links that are within the grids confines but actually part of the table*/
+.outsidegridlink 
+{
+	width: 100%;
+	background-color: Transparent;
+	text-align: right;
+	margin-bottom: 2px;
+}
+
+.verticalspacing
+{
+	margin: 4px 0px;
+}
+
+/* printablegrid tables are used on reports */
+
+table.printablegrid, table.fullwidth
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.printablegrid tr
+{
+	background-color: white;
+}
+
+table.printablegrid td
+{
+	padding: 1px 4px;
+	border: black solid 1px;
+	vertical-align:top;
+	font-weight:normal;
+}
+
+table.printablegrid th
+{
+	padding: 4px;
+	font-weight: normal;
+	text-align: left;
+
+	border: black solid 1px;
+	vertical-align:top;
+}
+
+table.printratingtablegrid
+{
+	border-collapse: collapse;
+	width: 100%;
+	border: gray solid 3px;
+}
+
+table.printratingtablegrid td
+{
+	padding: 1px 4px;
+	border: gray solid 1px;
+	vertical-align:top;
+	font-weight:normal;
+}
+
+/* title is used to put a title inside a grid */
+
+.title, .titleblock, .title td
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #5273b5;
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+	margin: 0px 0px 4px 0px;
+}
+
+table.nestedtable td
+{
+	border: #808080 solid 1px;
+	border-collapse: collapse;
+}
+
+table.nopad td
+{
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-collapse: collapse;
+	background-color: Transparent;
+}
+
+table.nopadfixedwidth
+{
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-collapse: collapse;
+	width: 700px;
+}
+
+/* iconandfile is used for icons next to the file name */
+
+table.iconandfile
+{
+	padding: 1px 2px 1px 0;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	height: 100%;
+
+}
+
+table.iconandfile td
+{
+	padding: 1px 2px 1px 0;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	height: 100%;
+}
+
+/* cal is used for sequence control */
+table.sequence
+{
+	padding: 1px 2px 1px 0;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+table.sequence a
+{
+    text-decoration:none;
+}
+
+table.sequence td
+{
+	padding: 1px 2px 1px 0;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	height: 100%;
+	width: 50%;
+	font-size:20px;
+}
+
+table.sequence .center
+{
+    font-size:12px;
+	text-align:center;
+	vertical-align:top;
+	width:100%;
+}
+
+table.sequence .left
+{
+	text-align:right;
+	vertical-align:top;
+}
+
+table.sequence .right
+{
+	text-align:left;
+}
+
+/* cal is used for the calendar control */
+
+table.cal td
+{
+	padding: 1px 2px 1px 2px;
+	border: none;
+}
+
+table.cal th
+{
+	padding: 1px 2px 1px 2px;
+	border: none;
+}
+
+
+
+/* used for error and warning messages */
+
+.errorlabel
+{
+	color: Red;
+	font-size: 10pt;
+	margin: 4px 0px;
+	font-weight: bold;
+}
+
+h1.errorlabel
+{
+	color: Red;
+	font-style: normal;
+	font-weight: bold;
+	font-size: large;
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+}
+
+.errorlabelgrid
+{
+	color: red;
+	font-weight: bold;
+}
+
+.successlabel
+{
+	color: green;
+	margin: 4px 0px;
+	font-weight: bold;
+}
+
+.successlabel2
+{
+	color: green;
+	margin: 4px 0px;
+	font-weight: bold;
+	font-size:10pt;
+}
+
+/* General PR buttons */
+
+ul.button
+{
+	margin: 0;
+	width: 700px;
+	text-align: right;
+	padding: 2px 0 2px 0; /* Required for IE 7*/
+}
+
+span.descriptionlabel /* this is placed next to the li item in the buttons area */
+{
+    vertical-align:middle;
+    padding-right:10px;
+    color:Gray;
+}
+
+.button li
+{
+	margin: 0px 0px 0px 3px;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+.button a, a.inlinebutton
+{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: arial, helvetica, geneva, swiss, SunSans-Regular;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	color: white;
+	background-color: #4472A9;
+	vertical-align:top;
+	border-top: solid 1px #cccccc;
+	border-right: solid 1px black;
+	border-bottom: solid 1px black;
+	border-left: solid 1px #cccccc;
+}
+
+
+/* sub-menus - in page lists of links*/
+
+ul.submenu
+{
+	margin: 0;
+	width: 700px;
+	height: 19px;
+	padding: 0 ;
+	position: relative;
+	text-align: left;
+}
+
+.submenu li
+{
+	margin: 0  0 0 2px;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	height: 19px;
+}
+
+.submenu a
+{
+	font-weight:bold;
+	padding: 0px 2px 0px 2px;
+	text-decoration: none;
+	height: 19px;
+}
+
+.submenu a:hover
+{
+	text-decoration: underline;
+}
+
+/* General PR tabs */
+
+ul.tab
+{
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 8px;
+	margin-right: 0;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: left;	
+	width: 700px;
+	border-bottom: solid 8px #dedede;
+}
+
+.tab li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;	
+	text-align: center;
+	border: 0;
+
+}
+
+.tab a
+{
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	background-color: #f4f4f4;
+	margin: 0;	
+	vertical-align: bottom;
+}
+
+.tab a:hover
+{
+	text-decoration:underline;
+}
+
+.tabcontainer
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 700px;
+}
+
+a.tabselected
+{
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	background-color: #dedede;
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px black;
+	border-bottom: none;
+	margin: 0px;
+}
+
+.tabselected a:hover
+{
+	text-decoration:underline;
+}
+
+/* only used in newreview2 */
+
+.div_Advanced
+{
+	position: absolute; top:0px; left:0px;
+	background-color: #ededed;
+	border: 1px solid black;
+	padding: 10px;
+    white-space:nowrap;
+}
+
+/* used by all system connector web projects */
+
+img.icon
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: text-bottom;
+}
+
+/* used to display help text inline with the grids */
+
+p.helptext
+{
+	width: 700px;
+}
+
+
+/* used for the user type page */
+
+.freeFlowCheckbox
+{
+    width:220px;
+    display:inline-block;   
+    padding-bottom:5px;
+}
+
+.freeFlowCheckbox:hover 
+{
+    text-decoration:underline;   
+}
+
+.modal
+{
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 900;
+}
+.sending
+{
+    font-family: Arial;
+    font-size: 20pt;
+    text-align: center;
+    display: none;
+    height: 50px;
+    width: 600px;
+    position: fixed;
+    z-index: 999;
+}

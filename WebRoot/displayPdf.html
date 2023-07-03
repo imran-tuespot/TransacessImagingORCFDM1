@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script
+	src="./jscript/jquery.min.js"></script>
+
+<script
+	src="./jscript/pdf.js"></script>
+
+<script
+	src="./jscript/pdf.worker.js"></script>
+
+
+<style>
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.sample-iframe {
+	width: 90%;
+	height: 90%;
+}
+
+#container > *:not(:first-child) {
+  border-top: solid 1px black; 
+}
+
+</style>
+
+<script>
+	var unit8array = '';
+	$(document)
+			.ready(
+					function() {
+						var pdfurl=window.sessionStorage.getItem('filename');
+						getPdf();
+						
+						function getPdf() {
+							var request = new XMLHttpRequest();
+							request.open(
+											"GET",
+											"../TransAccessImagingWS/role/ResponseBodyStreamFixed?id="+pdfurl,
+											true);
+							request.responseType = "blob";
+							request.onload = function(e) {
+								if (this.status === 200) {
+									var urlCreator = window.URL || window.webkitURL;
+									var fileUrl = window.URL.createObjectURL(this.response);
+									console.log('------91-----' + fileUrl);
+
+									$("#DisplayPDF").html($('<iframe> ', {
+										src : fileUrl,
+										width : "90%",
+										height : "600px"
+									}));
+
+									//get second call for entire pdf
+									$('#DisplayPDF iframe').ready(function() {
+										//alert('after render');
+										setTimeout(
+										  function() 
+										  {
+											//getPdf0();
+										  }, 5000);
+										
+									});
+								}
+								;
+							};
+							request.send();
+						}
+
+						function getPdf0() {
+							var request = new XMLHttpRequest();
+							request.open(
+											"GET",
+											"../TransAccessImagingWS/role/ResponseBodyStream?id="+pdfurl,
+											true);
+							request.responseType = "blob";
+							request.onload = function(e) {
+								if (this.status === 200) {
+									console.log('response:91--'+this.response);
+									var urlCreator = window.URL || window.webkitURL;
+									var fileUrl = window.URL.createObjectURL(this.response);
+									console.log('-----------' + fileUrl);
+									
+									$("#DisplayPDF").html($('<iframe>', {
+										src : fileUrl,
+										width : '90%',
+										height : "600px"
+									}));
+								}
+								;
+							};
+							request.send();
+						}
+
+					});
+</script>
+</head>
+<body>
+
+	
+
+	<div id="DisplayPDF"></div>
+	
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+	font: 70.5% 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #444;
+	--background: --#4D4D4D url(images/pattern.jpg) repeat;
+	margin: 0 0 2px;
+
+	}
+
+
+
+p {
+	margin: 1em 0 1.2em;
+	padding: 0;
+}
+
+.Star {
+color:red;
+}
+
+

@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Transaccess Imaging</display-name>
+  <servlet>
+    <display-name>GetSupervisorGridLinks</display-name>
+    <servlet-name>GetSupervisorGridLinks</servlet-name>
+    <servlet-class>GetSupervisorGridLinks</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetFiles</display-name>
+    <servlet-name>GetFiles</servlet-name>
+    <servlet-class>GetFiles</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DisplayPlsReview</display-name>
+    <servlet-name>DisplayPlsReview</servlet-name>
+    <servlet-class>DisplayPlsReview</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>EditDocument</display-name>
+    <servlet-name>EditDocument</servlet-name>
+    <servlet-class>EditDocument</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>EditDocProfile</display-name>
+    <servlet-name>EditDocProfile</servlet-name>
+    <servlet-class>EditDocProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DocMgmtSearchGrid</display-name>
+    <servlet-name>DocMgmtSearchGrid</servlet-name>
+    <servlet-class>DocMgmtSearchGrid</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>FileUpload</display-name>
+    <servlet-name>FileUpload</servlet-name>
+    <servlet-class>FileUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>AuditTrail</display-name>
+    <servlet-name>AuditTrail</servlet-name>
+    <servlet-class>AuditTrail</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>UserAuditTrail</display-name>
+    <servlet-name>UserAuditTrail</servlet-name>
+    <servlet-class>UserAuditTrail</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>UserAudit</display-name>
+    <servlet-name>UserAudit</servlet-name>
+    <servlet-class>UserAudit</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>UserAuditTrailPdf</display-name>
+    <servlet-name>UserAuditTrailPdf</servlet-name>
+    <servlet-class>UserAuditTrailPdf</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetUsernameValidation</display-name>
+    <servlet-name>GetUsernameValidation</servlet-name>
+    <servlet-class>GetUsernameValidation</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetSupervisorGrid</display-name>
+    <servlet-name>GetSupervisorGrid</servlet-name>
+    <servlet-class>GetSupervisorGrid</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetAdminPasswordReset</display-name>
+    <servlet-name>GetAdminPasswordReset</servlet-name>
+    <servlet-class>GetAdminPasswordReset</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetUserStatusChange</display-name>
+    <servlet-name>GetUserStatusChange</servlet-name>
+    <servlet-class>GetUserStatusChange</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>worksheet</servlet-name>
+    <servlet-class>org.jmesa.worksheet.servlet.WorksheetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>Getlogin</display-name>
+    <servlet-name>Getlogin</servlet-name>
+    <servlet-class>Getlogin</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetDropDown</display-name>
+    <servlet-name>GetDropDown</servlet-name>
+    <servlet-class>GetDropDown</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>portfolioDoc</display-name>
+    <servlet-name>portfolioDoc</servlet-name>
+    <servlet-class>portfolioDoc</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetDropdownProperty</display-name>
+    <servlet-name>GetDropdownProperty</servlet-name>
+    <servlet-class>GetDropdownProperty</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GetIndexDropDown</display-name>
+    <servlet-name>GetIndexDropDown</servlet-name>
+    <servlet-class>GetIndexDropDown</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DisplayPdf</display-name>
+    <servlet-name>DisplayPdf</servlet-name>
+    <servlet-class>DisplayPdf</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DisplayNonPdf</display-name>
+    <servlet-name>DisplayNonPdf</servlet-name>
+    <servlet-class>DisplayNonPdf</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <display-name>DisplayFile</display-name>
+    <servlet-name>DisplayFile</servlet-name>
+    <servlet-class>DisplayFile</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <display-name>DisplayPdf1</display-name>
+    <servlet-name>DisplayPdf1</servlet-name>
+    <servlet-class>DisplayPdf1</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DisplayPdfs</display-name>
+    <servlet-name>DisplayPdfs</servlet-name>
+    <servlet-class>DisplayPdfs</servlet-class>
+  </servlet>
+  
+
+  
+  <servlet>
+    <display-name>MyProfile</display-name>
+    <servlet-name>MyProfile</servlet-name>
+    <servlet-class>MyProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>SupervisorEditUserProfile</display-name>
+    <servlet-name>SupervisorEditUserProfile</servlet-name>
+    <servlet-class>SupervisorEditUserProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>ProcessRegistration</display-name>
+    <servlet-name>ProcessRegistration</servlet-name>
+    <servlet-class>ProcessRegistration</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DocDownloadFile</display-name>
+    <servlet-name>DocDownloadFile</servlet-name>
+    <servlet-class>DocDownloadFile</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DocDownloadBuiltFile</display-name>
+    <servlet-name>DocDownloadBuiltFile</servlet-name>
+    <servlet-class>DocDownloadBuiltFile</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>NewDocType</display-name>
+    <servlet-name>NewDocType</servlet-name>
+    <servlet-class>NewDocType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>log4j-init</servlet-name>
+    <servlet-class>Log4jInit</servlet-class>
+    <init-param>
+     <!--  <param-name>log4j-init-file</param-name>
+      <param-value>WEB-INF/classes/log4j.properties</param-value> -->
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/log4j.properties</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VerSession</servlet-name>
+    <servlet-class>VerSession</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDocument</servlet-name>
+    <servlet-class>AddDocument</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetVersions</servlet-name>
+    <servlet-class>GetVersions</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This will allow the user to create a list of documents to download</description>
+    <display-name>DocDownloadSearchGrid</display-name>
+    <servlet-name>DocDownloadSearchGrid</servlet-name>
+    <servlet-class>DocDownloadSearchGrid</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddRequiredDocument</servlet-name>
+    <servlet-class>AddRequiredDocument</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SampleServlet</servlet-name>
+    <servlet-class>SampleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendmailWithCC_BCC</servlet-name>
+    <servlet-class>SendmailWithCC_BCC</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CompanyProfile</servlet-name>
+    <servlet-class>CompanyProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddIndexType</servlet-name>
+    <servlet-class>AddIndexType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DocMgmtSearchGrid1</servlet-name>
+    <servlet-class>DocMgmtSearchGrid1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteIndexType</servlet-name>
+    <servlet-class>DeleteIndexType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDocumentType</servlet-name>
+    <servlet-class>DeleteDocumentType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddBatch</servlet-name>
+    <servlet-class>AddBatch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DocMgmtSearchFolders</servlet-name>
+    <servlet-class>DocMgmtSearchFolders</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFolder</servlet-name>
+    <servlet-class>AddFolder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDocumentData</servlet-name>
+    <servlet-class>GetDocumentData</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddProperty</servlet-name>
+    <servlet-class>AddProperty</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckDuplicateProperty</servlet-name>
+    <servlet-class>CheckDuplicateProperty</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDropdownOptions</servlet-name>
+    <servlet-class>GetDropdownOptions</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PropertyReport</servlet-name>
+    <servlet-class>PropertyReport</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PropertyDocumentReport</servlet-name>
+    <servlet-class>PropertyDocumentReport</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>NewDocTypeController</display-name>
+    <servlet-name>NewDocTypeController</servlet-name>
+    <servlet-class>NewDocTypeController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PropertyList</servlet-name>
+    <servlet-class>PropertyList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditProperty</servlet-name>
+    <servlet-class>EditProperty</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDocumentType</servlet-name>
+    <servlet-class>AddDocumentType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPropertyValues</servlet-name>
+    <servlet-class>GetPropertyValues</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPropertyNameValues</servlet-name>
+    <servlet-class>GetPropertyNameValues</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFiles</servlet-name>
+    <servlet-class>UploadFiles</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadTransactionFiles</servlet-name>
+    <servlet-class>UploadTransactionFiles</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DocMgmtAdvSearch</servlet-name>
+    <servlet-class>DocMgmtAdvSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPropertyDropdown</servlet-name>
+    <servlet-class>GetPropertyDropdown</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDocTypeDropdown</servlet-name>
+    <servlet-class>GetDocTypeDropdown</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetIndexTypeDropdown</servlet-name>
+    <servlet-class>GetIndexTypeDropdown</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFolderDropdown</servlet-name>
+    <servlet-class>GetFolderDropdown</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayText</servlet-name>
+    <servlet-class>DisplayText</servlet-class>
+  </servlet>
+  <servlet>
+    <description>Upload file and set fha numbers to inactive status </description>
+    <display-name>InactiveFHANumbers</display-name>
+    <servlet-name>InactiveFHANumbers</servlet-name>
+    <servlet-class>InactiveFHANumbers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewDocTypeController</servlet-name>
+    <url-pattern>/NewDocTypeController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PropertyReport</servlet-name>
+    <url-pattern>/PropertyReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PropertyDocumentReport</servlet-name>
+    <url-pattern>/PropertyDocumentReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>worksheet</servlet-name>
+    <url-pattern>*.wrk</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserStatusChange</servlet-name>
+    <url-pattern>/GetUserStatusChange</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUsernameValidation</servlet-name>
+    <url-pattern>/GetUsernameValidation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFiles</servlet-name>
+    <url-pattern>/GetFiles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDocument</servlet-name>
+    <url-pattern>/EditDocument</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditDocProfile</servlet-name>
+    <url-pattern>/EditDocProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocMgmtSearchGrid</servlet-name>
+    <url-pattern>/DocMgmtSearchGrid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUpload</servlet-name>
+    <url-pattern>/FileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayPlsReview</servlet-name>
+    <url-pattern>/DisplayPlsReview</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuditTrail</servlet-name>
+    <url-pattern>/AuditTrail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAuditTrail</servlet-name>
+    <url-pattern>/UserAuditTrail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAuditTrailPdf</servlet-name>
+    <url-pattern>/UserAuditTrailPdf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAudit</servlet-name>
+    <url-pattern>/UserAudit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSupervisorGrid</servlet-name>
+    <url-pattern>/GetSupervisorGrid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSupervisorGridLinks</servlet-name>
+    <url-pattern>/GetSupervisorGridLinks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAdminPasswordReset</servlet-name>
+    <url-pattern>/GetAdminPasswordReset</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Getlogin</servlet-name>
+    <url-pattern>/Getlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDropDown</servlet-name>
+    <url-pattern>/GetDropDown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDropdownProperty</servlet-name>
+    <url-pattern>/GetDropdownProperty</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>portfolioDoc</servlet-name>
+    <url-pattern>/portfolioDoc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetIndexDropDown</servlet-name>
+    <url-pattern>/GetIndexDropDown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayPdf</servlet-name>
+    <url-pattern>/DisplayPdf</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DisplayPdf1</servlet-name>
+    <url-pattern>/DisplayPdf1</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DisplayNonPdf</servlet-name>
+    <url-pattern>/DisplayNonPdf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>DisplayFile</servlet-name>
+    <url-pattern>/DisplayFile</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>DisplayPdfs</servlet-name>
+    <url-pattern>/DisplayPdfs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerSession</servlet-name>
+    <url-pattern>/VerSession</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDocument</servlet-name>
+    <url-pattern>/AddDocument</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetVersions</servlet-name>
+    <url-pattern>/GetVersions</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyProfile</servlet-name>
+    <url-pattern>/MyProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupervisorEditUserProfile</servlet-name>
+    <url-pattern>/SupervisorEditUserProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProcessRegistration</servlet-name>
+    <url-pattern>/ProcessRegistration</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocDownloadSearchGrid</servlet-name>
+    <url-pattern>/DocDownloadSearchGrid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocDownloadFile</servlet-name>
+    <url-pattern>/DocDownloadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocDownloadBuiltFile</servlet-name>
+    <url-pattern>/DocDownloadBuiltFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRequiredDocument</servlet-name>
+    <url-pattern>/AddRequiredDocument</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewDocType</servlet-name>
+    <url-pattern>/NewDocType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SampleServlet</servlet-name>
+    <url-pattern>/servlet/SampleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendmailWithCC_BCC</servlet-name>
+    <url-pattern>/SendmailWithCC_BCC</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompanyProfile</servlet-name>
+    <url-pattern>/CompanyProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddIndexType</servlet-name>
+    <url-pattern>/AddIndexType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocMgmtSearchGrid1</servlet-name>
+    <url-pattern>/DocMgmtSearchGrid1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteIndexType</servlet-name>
+    <url-pattern>/DeleteIndexType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDocumentType</servlet-name>
+    <url-pattern>/DeleteDocumentType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBatch</servlet-name>
+    <url-pattern>/AddBatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocMgmtSearchFolders</servlet-name>
+    <url-pattern>/DocMgmtSearchFolders</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFolder</servlet-name>
+    <url-pattern>/AddFolder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDocumentData</servlet-name>
+    <url-pattern>/GetDocumentData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProperty</servlet-name>
+    <url-pattern>/AddProperty</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckDuplicateProperty</servlet-name>
+    <url-pattern>/CheckDuplicateProperty</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDropdownOptions</servlet-name>
+    <url-pattern>/GetDropdownOptions</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PropertyList</servlet-name>
+    <url-pattern>/PropertyList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditProperty</servlet-name>
+    <url-pattern>/EditProperty</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDocumentType</servlet-name>
+    <url-pattern>/AddDocumentType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPropertyValues</servlet-name>
+    <url-pattern>/GetPropertyValues</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPropertyNameValues</servlet-name>
+    <url-pattern>/GetPropertyNameValues</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFiles</servlet-name>
+    <url-pattern>/UploadFiles</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>UploadTransactionFiles</servlet-name>
+    <url-pattern>/UploadTransactionFiles</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DocMgmtAdvSearch</servlet-name>
+    <url-pattern>/DocMgmtAdvSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPropertyDropdown</servlet-name>
+    <url-pattern>/GetPropertyDropdown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDocTypeDropdown</servlet-name>
+    <url-pattern>/GetDocTypeDropdown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetIndexTypeDropdown</servlet-name>
+    <url-pattern>/GetIndexTypeDropdown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFolderDropdown</servlet-name>
+    <url-pattern>/GetFolderDropdown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayText</servlet-name>
+    <url-pattern>/DisplayText</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InactiveFHANumbers</servlet-name>
+    <url-pattern>/InactiveFHANumbers</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+     <welcome-file>home.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
+  <env-entry>
+    <description>DB Connection</description>
+    <env-entry-name>connection</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+<env-entry-value>jdbc:mariadb://prodtransaccess-copy-12-8-2020.cuf1ux7hwatl.us-gov-west-1.rds.amazonaws.com:3306/rmshelpdesk</env-entry-value>
+
+  <!--  <env-entry-value>jdbc:mariadb://taprod-mfhd-copy-12-5-2020.cuf1ux7hwatl.us-gov-west-1.rds.amazonaws.com:3306/orcfprod</env-entry-value>
+
+     <env-entry-value>jdbc:mariadb://taprod-mfhd.cuf1ux7hwatl.us-gov-west-1.rds.amazonaws.com:3306/orcfprod?autoReconnect=true</env-entry-value>  -->
+<!--     <env-entry-value>jdbc:oracle:thin:@172.31.2.111:1521:PSPATCH2</env-entry-value> -->
+<!-- <env-entry-value>jdbc:mariadb://transaccessdev.cuf1ux7hwatl.us-gov-west-1.rds.amazonaws.com:3306/orcfprod</env-entry-value>
+ --><!-- <env-entry-value>jdbc:mariadb://prodtransaccess.cuf1ux7hwatl.us-gov-west-1.rds.amazonaws.com:3306/orcfprod</env-entry-value> -->
+  </env-entry>
+  <env-entry>
+    <description>URL</description>
+    <env-entry-name>URL</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+<!--        <env-entry-value>https://www.transaccessimaging.com/v2.0/</env-entry-value>
+ -->    
+<!--  <env-entry-value> http://52.61.210.206:9911/TransacessImagingORCFDM_FS/</env-entry-value>     -->
+	  <env-entry-value> http://localhost:8078/TransacessImagingORCFDM/</env-entry-value>
+  
+ </env-entry>
+ 
+  <env-entry>
+    <description>Web Folder for uploading documents : web for Prod and webtest for dev/test</description>
+    <env-entry-name>webfolder</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>IREMSDocuments</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Batch Folder for uploading documents : web for Prod and webtest for dev/test</description>
+    <env-entry-name>batchfolder</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>batchtest1</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>DB USER</description>
+    <env-entry-name>dbusername</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>root</env-entry-value>
+
+  </env-entry>
+  <env-entry>
+    <description>DB USPW</description>
+    <env-entry-name>dbpassword</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+<!--      <env-entry-value>Peniel$123</env-entry-value>
+      <env-entry-value>UfFcCo0ytOewWYaHbJ/piQ==</env-entry-value> -->
+       <env-entry-value>1FcJUjDtxhD8CDte0gXvfw==</env-entry-value><!--preprod -->
+      
+<!--  <env-entry-value>2iFLdnQKx8D3NrOSpLmBZA==</env-entry-value> -->
+ <!--  <env-entry-value>p3n13l</env-entry-value> -->
+ </env-entry>
+  <env-entry>
+    <description>SMTP Server</description>
+    <env-entry-name>smtp</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>10.1.0.5</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>SMTP Server</description>
+    <env-entry-name>SMTP_ADDR</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>smtp.office365.com</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>SMTP Server</description>
+    <env-entry-name>SMTP_PORT</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>587</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>SMTP Server</description>
+    <env-entry-name>SMTP_EMAIL</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>transaccess@penielsolutions.com</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>SMTP Server</description>
+    <env-entry-name>SMTP_PWD</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>Q6MTVMyWy11xSxhgw2XWSA==</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>DB Source</description>
+    <env-entry-name>dbsource</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>orcfprod</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Sending Email</description>
+    <env-entry-name>semail</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>noreply@fhaoutreach.com</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Document Converter URL</description>
+    <env-entry-name>converterUrl</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>10.1.3.78:8301</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Document Converter Directory</description>
+    <env-entry-name>converterCommonUrl</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>C:\em\FHA232\webtest1</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>RestURL</description>
+    <env-entry-name>restCommonUrl</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+<!--       <env-entry-value>https://www.transaccessimaging.com/TransAccessImagingWS</env-entry-value>
+ -->
+    <!--   <env-entry-value> http://52.61.138.118:8080/TransAccessImagingWS_AS</env-entry-value>   -->
+         <env-entry-value>http://localhost:3331/</env-entry-value>  
+     
+
+    <!-- <env-entry-value> http://52.61.210.206:9911/TransAccessImagingWS_FS/</env-entry-value>  -->   
+ 
+  </env-entry>
+  
+  <env-entry>
+    <description>ServiceLocatorURL</description>
+    <env-entry-name>serviceLocatorURL</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+<!--     <env-entry-value>https://www.transaccessimaging.com</env-entry-value>
+ -->  
+     <env-entry-value>http://52.61.210.206:9911</env-entry-value>
+ 
+ </env-entry>
+  <env-entry>
+    <description>Document Temp Directory</description>
+    <env-entry-name>converterTempDirectory</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>C:\em\FHA232\webtest1</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Final Dowload Directory</description>
+    <env-entry-name>finalDownloadDir</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>C:\em\FHA232\webtest1</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>File Upload Size</description>
+    <env-entry-name>fileUploadSize</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>2000000000</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>zip Email File Size</description>
+    <env-entry-name>zipEmailFileSize</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>27262976</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>File Upload Size</description>
+    <env-entry-name>uploadFileSize</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>6</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Repository location on linux</description>
+    <env-entry-name>repository</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>D:/data/TA_DATA_IMPORT</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Repository location on linux</description>
+    <env-entry-name>repositoryOCR</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>D:/data/TA_DATA_IMPORT</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Repository location on linux</description>
+    <env-entry-name>repositoryOCR1</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>D:/data/TA_DATA_IMPORT/temp</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>PDF2Text executable file</description>
+    <env-entry-name>pdf2txt</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>C:\\pdf2txtocrcmd\\pdf2txtocr.exe</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Application Property</description>
+    <env-entry-name>appProperty</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>D:\em\FHA232\config34\appConfig.properties</env-entry-value>
+  </env-entry>
+  <filter>
+    <filter-name>sitemesh</filter-name>
+    <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/*</url-pattern>
+    <servlet-name>Getlogin</servlet-name>
+    <dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>*.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/logout.jsp*</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+    <env-entry>
+    <description>Repository location on linux</description>
+    <env-entry-name>projectName</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>/TransacessImagingORCFDM/</env-entry-value>
+  </env-entry>
+  <env-entry>
+    <description>Apache Solr URL</description>
+    <env-entry-name>solrUrl</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>http://10.1.3.74/ApacheSolr</env-entry-value>
+  </env-entry>
+  <context-param>
+    <param-name>jmesaPreferencesLocation</param-name>
+    <param-value>WEB-INF/jmesa.properties</param-value>
+  </context-param>
+
+ <!-- <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/log4j.properties</param-value>
+    </context-param> -->
+
+   <!--      <listener>
+        <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
+    </listener> -->
+</web-app>
